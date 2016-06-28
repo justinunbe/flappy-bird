@@ -1,18 +1,54 @@
-.background-mountains {
-  background-image: url("http://flappycreator.com/default/bg.png");
-  background-repeat: repeat-x;
-  height: 50vh;
+html, body {
+  height: 100%;
   width: 100%;
-  -webkit-animation: backgroundScroll 5s linear infinite;
-  animation: backgroundScroll 5s linear infinite;
+}
+.main-body {
+  display: flex;
+}
+.background-mountains {
+  background-image: url("http://ellisonleao.github.io/clumsy-bird/data/img/bg.png");
+  background-repeat: repeat-x;
+  height: calc(100vh - 28vh);
+  width: 100%;
+  background-position: left 0px, bottom 0px;
+  -webkit-animation: backgroundScroll 2400s linear infinite;
+  animation: backgroundScroll 2400s linear infinite;
 }
 
 @-webkit-keyframes backgroundScroll {
 from {background-position: 0 0;}
-to {background-position: -200px 0;}
+to {background-position: -130000px 0;}
 }
 
 @keyframes backgroundScroll {
 from {background-position: 0 0;}
-to {background-position: -200px 0;}
+to {background-position: -130000px 0;}
+}
+
+.flappy {
+  height: 90px;
+  width: 80px;
+}
+
+.ground {
+  background-image: url("http://flappycreator.com/default/ground.png");
+  height: 14vh;
+  width: 100%;
+  background-repeat: repeat-x;
+  position: absolute;
+  bottom: 0;
+  -webkit-animation: backgroundScroll 2400s linear infinite;
+  animation: backgroundScroll 2400s linear infinite;
+}
+
+.pipe {
+  background-image: url("https://sites.google.com/site/zieglerscratch/_/rsrc/1429936357729/flappy-bird/mariopipe2.png");
+  height: 90vh;
+  width: 100%;
+  -webkit-animation: backgroundScroll 2400s linear infinite;
+  animation: backgroundScroll 2400s linear infinite;
+  background-repeat: repeat-x;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
