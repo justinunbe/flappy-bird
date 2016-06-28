@@ -1,0 +1,18 @@
+.background-mountains {
+  background-image: url("http://flappycreator.com/default/bg.png");
+  background-repeat: repeat-x;
+  height: 50vh;
+  width: 100%;
+  -webkit-animation: backgroundScroll 5s linear infinite;
+  animation: backgroundScroll 5s linear infinite;
+}
+
+@-webkit-keyframes backgroundScroll {
+from {background-position: 0 0;}
+to {background-position: -200px 0;}
+}
+
+@keyframes backgroundScroll {
+from {background-position: 0 0;}
+to {background-position: -200px 0;}
+}
