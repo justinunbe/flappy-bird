@@ -44,16 +44,16 @@ html, body {
 
 .pipes-repeat {
   height: 85vh;
-  width: 340px;
+  width: 600px;
   display: flex;
-  border: 1px black solid;
+  /*border: 1px black solid;*/
   align-items: flex-start;
 }
 .pipe {
     background-image: url("https://sites.google.com/site/zieglerscratch/_/rsrc/1429936357729/flappy-bird/mariopipe2.png");
     height: 85vh;
-    width: 140px;
-    border: 1px blue solid;
+    width: 400px;
+    /*border: 1px blue solid;*/
     background-repeat: repeat-x;
     -webkit-animation: backgroundScroll 2400s linear infinite;
   animation: backgroundScroll 2400s linear infinite;
