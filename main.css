@@ -40,6 +40,9 @@ html, body {
     width: 80px;
     display: flex;
     align-self: center;
+    position: absolute;
+    border: 1px red solid;
+    top: 10;
 }
 
 .pipes-repeat {
